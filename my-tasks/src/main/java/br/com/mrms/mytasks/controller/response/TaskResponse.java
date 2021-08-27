@@ -25,5 +25,6 @@ public class TaskResponse {
     private LocalDate dataDelivery;
     private Integer categoryId;
     private Integer userId;
+    private TaskStatus taskStatus;
 
 }

@@ -57,7 +57,7 @@ public class TaskService {
         Task task = getTaskById(id);
 
         if (!TaskStatus.OPEN.equals(task.getStatus()))
-            throw new TaskStatusException("Não é possível iniciar a task com status "
+            throw new TaskStatusException("Não é possível iniciar a task com status diferente de aberto"
                     + task.getStatus().name());
 
         task.setStatus(TaskStatus.IN_PROCESS);
